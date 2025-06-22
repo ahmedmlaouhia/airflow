@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from airflow.operators.bash import BashOperator
 
 # The DAG object; we'll need this to instantiate a DAG
-from airflow.sdk import DAG
+from airflow import DAG
 with DAG(
     "tutorial",
     # These args will get passed on to each operator
