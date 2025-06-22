@@ -47,5 +47,5 @@ with DAG(
         bash_command="echo 'Deploying model to production...'; sleep 2"
     )
 
-    # DAG dependencies
+    # Set task dependencies
     fetch_data >> preprocess_data >> train_model >> evaluate_model >> deploy_model
