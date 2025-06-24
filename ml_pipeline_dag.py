@@ -17,7 +17,6 @@ with DAG(
     dag_id="mlops_pipeline_demo",
     description="An example ML pipeline DAG for demo purposes",
     default_args=default_args,
-    start_date=datetime(2023, 1, 1),
     schedule_interval="@daily",
     catchup=False,
     tags=["mlops", "demo"],
